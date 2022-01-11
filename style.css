@@ -1,0 +1,48 @@
+:root {
+    --grid-size: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    border: 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: gray;
+}
+button, input {
+    border: solid black 1px;
+    margin: 2px;
+    padding: 5px;
+    list-style-type: none;
+}
+li:hover {
+    background-color: black;
+    color: white;
+}
+  
+  #grid {
+    display: grid;
+    grid-gap: none;
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    height: 700px;
+    width: 700px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 1px;
+  }
+  
+  .square {
+    border: 1px solid rgba(0, 0, 0, 0.103);
+  }
+  
+  .square:hover {
+    border: 1px solid #ddd;
+    border: 1px solid black;
+    text-align: center;
+  }
