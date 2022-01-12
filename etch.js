@@ -1,9 +1,9 @@
-const header = document.querySelector("header");
-
-const navList = document.createElement("ul");
-header.appendChild(navList);
-
 const grid = document.getElementById("grid");
+const setBtn = document.getElementById("btn");
+const gridSize = document.getElementById("grid-selector");
+const colorChoice = document.getElementById("color-selector");
+const pixels = document.getElementsByClassName("square");
+let pencil = colorChoice.value;
 
 function makeGrid(size){
     document.querySelectorAll(".square").forEach(e => e.remove());
@@ -14,4 +14,18 @@ function makeGrid(size){
         square.className = "square";
         grid.appendChild(square);
     }
+}
+
+setBtn.addEventListener("click", e => {
+    makeGrid(gridSize.value);
+}
+)
+
+colorChoice.addEventListener("input", e => {
+    pencil = colorChoice.value;
+}
+)
+
+for (let j = 0; j <= pixels.length; j++){
+    ;
 }

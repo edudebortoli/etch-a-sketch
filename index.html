@@ -11,13 +11,19 @@
 <body>
     <header>
         <nav>
-            <div>
-                <input color>
-                <button id="btn"> set grid</button>
+            <div class="nav-itens">
+                <label for="grid-selector"> Grid Size </label>
+                <input id="grid-selector" type="range" min="1" max="100" value="16" oninput="this.nextElementSibling.textContent = `${this.value} x ${this.value}`">
+                <output>16 x 16</output>
+                <button id="btn"> SET </button>
             </div>
-            <button> Select Color</button>
-        </nav>
+            <div class="nav-itens">    
+                <input id="color-selector" type="color" value="#000000" name="Color">
+                <label for="color-selector"> Color </label>
+            </div>
+            </nav>
     </header>
+
     <div id="grid"></div>
 </body>
 </html>
