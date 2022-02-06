@@ -1,2 +1,2 @@
 # etch-a-sketch
-Dom study project
+Dom study project from Odin Project
